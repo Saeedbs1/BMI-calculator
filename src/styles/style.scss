@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
-}
 .content {
   width: 100%;
   max-width: 1260px;
@@ -22,73 +19,77 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-  .label {
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  height: 100%;
+  }
+
+  .row {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content:space-between;
+    gap: 2rem;
+    border-radius: 40px;
+    padding:30px;
     background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
-    padding: 20px;
     color: white;
-    
+    width: 100%;
+    max-width: 400px;
+        text-align: center;
+    .myLabel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+    }
+    .myButton{
+      text-align: center;
+      width: 100%;
+      height: 100%;
+
+    }
+    .myOutput{
+      text-align: center;
+        width: 100%;
+    }
+  select{
+   padding: 10px;
+   border-radius: 10px;
+    border: none;
+    outline: none;
+  
+
+  }
+
   }
 
   input {
     border: none;
     padding: 10px;
     color: black;
+    border-radius: 10px;
   }
 
   input:focus {
     outline: none;
   }
-
-  .submitbutton {
-    padding: 12px 40px;
-    background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
-    color: white;
-  }
-
-  .output {
-    margin-top: 50px;
-    background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  min-width: 500px;
-  }
-
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-
-  }
-
   @media (max-width: 900px) {
     .form {
       align-items: center;
-    
+
     }
+
     .content {
       width: 100%;
       align-items: center;
-      .row{
-        width: 100%;
-      }
-    }
-    .label {
-      flex-direction: column;
-      width: 100%;
+      padding: 50px;
     }
   }
 }

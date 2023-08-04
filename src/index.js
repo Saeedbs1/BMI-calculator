@@ -1,6 +1,7 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Form from './components/Form.js';
+import { createRoot } from "react-dom";
+import App from "./components/Form.js"; 
 
-ReactDOM.render(<Form />, document.getElementById("root"));
+
+createRoot(document.getElementById("root")).render(<App />);
