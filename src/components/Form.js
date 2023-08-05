@@ -32,7 +32,7 @@ class Form extends React.Component {
     if (this.state.unitSystem === "metric") {
       bmiValue = weightValue / (heightValue * heightValue);
     } else if (this.state.unitSystem === "imperial") {
-      const heightInMeters = heightValue * 0.304;
+      const heightInMeters = heightValue * 0.3048;
       const weightInKg = weightValue * 0.453592;
       bmiValue = weightInKg / (heightInMeters * heightInMeters);
     }
